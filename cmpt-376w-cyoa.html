@@ -9,16 +9,15 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play cmpt-376w-cyoa.</tw-noscript></noscript></tw-story>
-<tw-storydata name="cmpt-376w-cyoa" startnode="22" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="A4762D99-4071-425A-80A3-932E0AF669C8" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[name="Forced Ending Check"]  {
+<tw-storydata name="cmpt-376w-cyoa" startnode="22" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="A4762D99-4071-425A-80A3-932E0AF669C8" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[name="Ending footer"]  {
 	display: none;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="startup" color="blue"></tw-tag><tw-tag name="footer" color="purple"></tw-tag><tw-passagedata pid="1" name="Setting intro" tags="" position="1300,250" size="100,100">You&#39;re a senior developer at the Big Brain Company.
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="startup" color="blue"></tw-tag><tw-tag name="footer" color="purple"></tw-tag><tw-tag name="header" color="orange"></tw-tag><tw-passagedata pid="1" name="Setting intro" tags="" position="1300,200" size="100,100">You&#39;re a senior developer at the Big Brain Company.
 
 You love your job; the pay is good, your co-workers are your best friends, your manager is supportive, and the current project you&#39;re working on is super interesting.
 
 (link: &quot;Tell me about the project&quot;)[ You&#39;ve been working on a new AI that can identify people based on certain information given to it. How they walk, how they talk, it can even tell if they had their hair cut. This system could be used to find missing people or catch shoplifters from CCTV
 
 The AI an accuracy rating of 99.999% and now your company wants to market it to potential clients.]
-
 
 (link:&quot;Tell me about my life&quot;)[You are a 30 years old and you have built a reputation for yourself as a hardworking and reliable worker. As a senior developer you have been given access to most of the code base for the company. 
 
@@ -30,56 +29,54 @@ In your non-professional life you are married and you have two children. Your sp
 
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Client intro" tags="" position="1300,400" size="100,100">One of the big names coming in is a weapons manufacturing company, Dark Vison Defense.
+</tw-passagedata><tw-passagedata pid="2" name="Client intro" tags="" position="1300,300" size="100,100">One of the big names coming in is a weapons manufacturing company, Dark Vison Defense.
 
 Your team wasn&#39;t entirely keen on allowing them to use this technology, but your CEO assures everyone that the company is only using it for security purposes. Stuff like keeping predators off elementary school grounds and rich folks that want to keep paparazzi off their lawn. All that the AI would be attached to are deterrents, nothing would harm them seriously.
 
-(click:?page)[The day of the demo arrived and the hardware team was able to build a rig that simulated how our &quot;targetting&quot; system worked. It was a camera tripod, with a smartphone and other sensors on top. They taped a laser pointer onto the head and made it able to turn a full 360 degrees. The laser would search for a target, face them and the laser beam would turn on to hit them.
+(link:&quot;The demo rig&quot;)[The hardware team was able to build a rig that simulated how our &quot;targetting&quot; system worked. It was a camera tripod, with a smartphone and other sensors on top. They taped a laser pointer onto the head and made it able to turn a full 360 degrees. The laser would search for a target, face them and the laser beam would turn on to hit them.
 
-You gave the AI a list of profiles (pretty much our QA team) and walked around the office with the rig on an office chair. The AI was perfect. It hit every single target. It made sure to shut off if someone else was in the way.
+(link:&quot;The demo&quot;)[You gave the AI a list of profiles (pretty much our QA team) and walked around the office with the rig on an office chair. The AI was perfect. It hit every single target. It made sure to shut off if someone else was in the way.
 
 The weapons guys were impressed. You felt like you had their business in the bag.
 
 [[Debrief with the CEO]]
-]</tw-passagedata><tw-passagedata pid="3" name="Debrief with the CEO" tags="" position="1300,575" size="100,100">After the weapon executives left, our CEO called for a meeting. She congratulated us for a job well done.
+]]</tw-passagedata><tw-passagedata pid="3" name="Debrief with the CEO" tags="" position="1300,400" size="100,100">After the weapon executives left, our CEO called for a meeting. She congratulated us for a job well done.
 
 She told you that they were very happy and&amp;mdash;with a few minor tweaks&amp;mdash;our AI would be in all of their autonomous systems. This was a billion dollar deal and she told you everyone would get their piece: bonuses, really big ones.
 
-(click:?page)[
-Your team was ecstatic. On Monday your team would get a list of changes that the weaons company wanted and you&#39;d have until the end of the year to implement them. For that amount of money, your team would do anything they asked us. You could finally afford a house in the area, and save some money for your  kids&#39; college fund.
+(link:&quot;The team&#39;s reaction&quot;)[Your team was ecstatic. On Monday your team would get a list of changes that the weapons company wanted and you&#39;d have two months to implement them. For that amount of money, you&#39;d do anything they asked. You could finally afford a house in the area, and save some money for your  kids&#39; college fund.
+(set: $week to 1, $day to 1)
+[[Enjoy the weekend|Meeting]]]</tw-passagedata><tw-passagedata pid="4" name="Meeting" tags="" position="1300,500" size="100,100">Your team gathered in the conference room for the changes meeting and while you waited for your CEO, you all started talking about everyone&#39;s plans with the bonus money. 
 
-[[Enjoy the weekend|Monday]]
-]</tw-passagedata><tw-passagedata pid="4" name="Monday" tags="" position="1300,750" size="100,100">Your team gathered in the conference room and chatted about their plans for the bonus. Some people were thinking of retiring, some people were thinking of going on a long break, but it was clear that the money was going to change your lives.
+(link:&quot;Everyone&#39;s plans&quot;)[Some people were thinking of retiring, some people were thinking of going on a long break, but it was clear that the money was going to change your lives.
 
-Finally, the person leading the meeting showed up, but it wasn&#39;t the CEO; it was one of the principal developers, Steve. He was one of the original designers of your model and he treated the AI like his baby. You thought he&#39;d be the one most excited about the deal our company was making, but he seemed... sad.
+(link:&quot;The door swings open&quot;)[Finally, the person leading the meeting showed up, but it wasn&#39;t the CEO; it was one of the principal developers, Steve. He was one of the original designers of your model and he treated the AI like his baby. You thought he&#39;d be the one most excited about the deal our company was making, but he seemed... sad.
 
 (link:&quot;Start the meeting&quot;)[He outlined all of the changes and we understood immediately why he was so down.
 
-(link:&quot;Feature 1&quot;)[The AI is too specific. They didn&#39;t want to tell it who to hit, but just give it some guidelines on who could be considered a target.]
+(link-reveal:&quot;Feature 1: &quot;)[The AI is too specific. They didn&#39;t want to tell it who to hit, but just give it some guidelines on who could be considered a target.]
 
-(link:&quot;Feature 2&quot;)[It needs to be a bit faster at identifying threats. The only way we could do that is by sacrificing some accuracy.]
+(link-reveal:&quot;Feature 2: &quot;)[It needs to be a bit faster at identifying threats. The only way we could do that is by sacrificing some accuracy.]
 
-(link:&quot;Feature 3&quot;)[The AI was a bit too cautious. It needed a way to get targets when non-targets were in the crossfire. They noted that the laser wouldn&#39;t turn on if there was a chance of someone else getting in the way.]
+(link-reveal:&quot;Feature 3: &quot;)[The AI was a bit too cautious. It needed a way to get targets when non-targets were in the crossfire. They noted that the laser wouldn&#39;t turn on if there was a chance of someone else getting in the way.]]]]
 
-(more:)[Your team was stunned. There are some glaring problems with their &quot;small&quot; changes. You think about the consequences that these features could bring. Your mind was swirling with thoughts. What should you do?
+(more:)[When the meeting ended, Steve left immediately. No questions taken, no &quot;have a great day&quot;, just a &quot;good luck&quot;. 
+Everyone was stunned.
 
-[[Quit]]       [[Sabotage]]       [[Stay with the Company]]       [[Protest the changes]]]
-]</tw-passagedata><tw-passagedata pid="5" name="Quit" tags="" position="700,1025" size="100,100">You head back to your desk and begin writing your resignation letter. As you write it you think about how great your job, the good pay, and how much hard work you&#39;ve done to get to where you are now. Quitting now would undo years of hard work. 
+Everyone knew what these changes would do.
 
-You also have a family to think about&amp;mdash;this isn&#39;t just about how you feel.
+[[Go back to your desk-&gt;Hub]]]</tw-passagedata><tw-passagedata pid="5" name="Quit" tags="" position="600,900" size="100,100">(if:visits is 1)[You open up Word and start typing out your resignation letter. As you write it you think about how great your job is. The pay is great and you&#39;ve been here for so long! Quitting now would undo years of hard work. You also have a family to think about&amp;mdash;this isn&#39;t just about you.
 
-You now start to doubt yourself in your decision.
+You start to doubt this decision.]
+(else:)[You re-open the letter you&#39;ve been writing. Maybe it&#39;s time to leave.]
 
-(after:$read_timer)[[[Stay]]
-(link:&quot;You&#39;ll figure something out.&quot; )[{
-	(set: $job to 0)
-    (go-to:&quot;Ending&quot;))
-}]]
-</tw-passagedata><tw-passagedata pid="6" name="Sabotage" tags="" position="1000,1000" size="100,100">Your conscience prevents you from implementing the system without modifying it, but your need for job security prevents from quitting outright
+[[Get Back to Work-&gt;Hub]]
+(link:&quot;Quit&quot; )[(set: $job to 0))
+</tw-passagedata><tw-passagedata pid="6" name="Sabotage" tags="" position="1250,925" size="100,100">Your conscience prevents you from implementing the system without modifying it, but your need for job security prevents from quitting outright
 
 [[Alter the software]]
 [[Be annoying]]
-[[Quiet quit]]</tw-passagedata><tw-passagedata pid="7" name="Stay with the Company" tags="" position="675,1050" size="100,100">You say to yourself that you are only one person and you can&#39;t make a difference in the world. You keep your head down and keep working on the project. 
+[[Quiet quit]]</tw-passagedata><tw-passagedata pid="7" name="Stay with the Company" tags="" position="800,900" size="100,100">You say to yourself that you are only one person and you can&#39;t make a difference in the world. You keep your head down and keep working on the project. 
 
 You tell yourself that you are not a hero. You are not a hero that can just sacrifice themselves for the greater good. You have a family, you have a spouse and two wonder kids need you. You just bought a house and you have morgage to pay, bills to pay and family to feed.
 
@@ -112,21 +109,21 @@ You think for a moment on the boss&#39;s words and then make your reply.
 [[Stay with the Company]]
 [[Quit]]
 [[Refuse to Work on Features]]
-[[Threaten to go to Media]]</tw-passagedata><tw-passagedata pid="9" name="Stay" tags="" position="1050,1125" size="100,100">You grab your incomplete resignation letter and toss it in the garbage can, you&#39;ve worked to hard to get to where you are now to ruin your entire career.
-[[Stay with the Company]] </tw-passagedata><tw-passagedata pid="10" name="Continue with quitting" tags="" position="925,1350" size="100,100">After some thought you remember that you became a software developer to help people not to harm them.
+[[Threaten to go to Media]]</tw-passagedata><tw-passagedata pid="9" name="Stay" tags="" position="1000,900" size="100,100">You grab your incomplete resignation letter and toss it in the garbage can, you&#39;ve worked to hard to get to where you are now to ruin your entire career.
+[[Stay with the Company]] </tw-passagedata><tw-passagedata pid="10" name="Continue with quitting" tags="" position="1900,1575" size="100,100">After some thought you remember that you became a software developer to help people not to harm them.
 You heard from a colleague that 3 people have quit already from the news of the new client.
 You finish writing the resignation letter and head to your boss&#39;s office. You hand him the letter say goodbye and walk out the door uncertain of your future.
 [[Whistle Blower]]
 [[Try finding a New Job]]
-</tw-passagedata><tw-passagedata pid="11" name="Try finding a New Job" tags="" position="1275,1175" size="100,100">You spend months sending your resume to hundreds of different companies hoping to get a new job, however there are few job openings. Your are forced to take a low paying job at the local super market. You are forced to carefully budget your finances to pay all of your bills.
+</tw-passagedata><tw-passagedata pid="11" name="Try finding a New Job" tags="" position="2025,1375" size="100,100">You spend months sending your resume to hundreds of different companies hoping to get a new job, however there are few job openings. Your are forced to take a low paying job at the local super market. You are forced to carefully budget your finances to pay all of your bills.
 You begin to regret your decision to quit, however you hear from one of your former coworkers that their efforts to make the AI faster and less specific went too far and when it was deployed it began targeting innocent civilians causing mass casualties. This message causes you to fell content with your decision to quit, knowing that you had no part in causing all the harm, altough a voice at the back of your mind wonders if you could have perhaps done something to stop the project.
-After many more agonizing months you find a new good paying software developer position, and your life returns to the good quality from before you quit.</tw-passagedata><tw-passagedata pid="12" name="Alter the software" tags="" position="1825,1375" size="100,100">You decide to make a change to the software. You quickly remember that there is a version control in effect at your company, and any change you make will be recorded under your name. What do you do next?
+After many more agonizing months you find a new good paying software developer position, and your life returns to the good quality from before you quit.</tw-passagedata><tw-passagedata pid="12" name="Alter the software" tags="" position="1000,1200" size="100,100">You decide to make a change to the software. You quickly remember that there is a version control in effect at your company, and any change you make will be recorded under your name. What do you do next?
 
 [[Make a subtle change]]
 
 [[Delete Previous Versions |Go to Jail]]
 
-[[Alter the code under Steve&#39;s name]]</tw-passagedata><tw-passagedata pid="13" name="Be annoying" tags="" position="1975,1350" size="100,100">Knowing that your software company has ways of tracking who makes changes to the software, you decide not to risk anything major.
+[[Alter the code under Steve&#39;s name]]</tw-passagedata><tw-passagedata pid="13" name="Be annoying" tags="" position="1400,1025" size="100,100">Knowing that your software company has ways of tracking who makes changes to the software, you decide not to risk anything major.
 
 (click:?page)[=
 Knowing that there is no camera in the breakroom, you decide to eat everyones lunches that they keep in the fridge.
@@ -140,7 +137,7 @@ You water the office plants with soda, slowly killing them.
 (click:?page)[=
 You never get caught ...
 (click:?page)[=
-but the morally questionable software is released to catastrophic success. Your actions had no effect besides annoying your coworkers.</tw-passagedata><tw-passagedata pid="14" name="Quiet quit" tags="" position="2150,1350" size="100,100">You recognize the immorality of the software, yet for whatever reason you can’t bring yourself to Quit. You decide to just lay low. You complete all your tasks assigned to you but you never bring your all. Only ever contributing the bare minimum of effort, until during the next economic downturn you’re are eventually let go.
+but the morally questionable software is released to catastrophic success. Your actions had no effect besides annoying your coworkers.</tw-passagedata><tw-passagedata pid="14" name="Quiet quit" tags="" position="1625,925" size="100,100">You recognize the immorality of the software, yet for whatever reason you can’t bring yourself to Quit. You decide to just lay low. You complete all your tasks assigned to you but you never bring your all. Only ever contributing the bare minimum of effort, until during the next economic downturn you’re are eventually let go.
 
 (click:?page)[=
 Ending: The Software releases a few weeks behind schedule, It makes headlines with how unbelievably lethal it is. You don’t have a job.
@@ -171,11 +168,11 @@ Stefan Diaconu 301553230
 Kavin Godden 301320028
 
 [[Start the Game|Setting intro]]
-</tw-passagedata><tw-passagedata pid="23" name="Leave" tags="" position="1525,400" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Reject" tags="" position="1525,625" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Continue to work" tags="" position="650,1325" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="Go to Jail" tags="" position="1900,1575" size="100,100">Ending: By taking openly malicious actions against a company you are found out, arrested and charged.
+</tw-passagedata><tw-passagedata pid="23" name="Continue to work" tags="" position="475,1100" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Go to Jail" tags="" position="875,1475" size="100,100">Ending: By taking openly malicious actions against a company you are found out, arrested and charged.
 (click:?page)[=
 You end up with a short stint in jail before eventually being released on good behaviour.
 (click:?page)[=
-The software releases and you can not find a job in any computing industry due to you horrible reputation.</tw-passagedata><tw-passagedata pid="27" name="Make a subtle change" tags="" position="1700,1575" size="100,100">(click:?page)[=
+The software releases and you can not find a job in any computing industry due to you horrible reputation.</tw-passagedata><tw-passagedata pid="25" name="Make a subtle change" tags="" position="850,1175" size="100,100">(click:?page)[=
 You decide to decrease the functionality of the AI by adding a hard to catch bug at the core of most of it&#39;s features
 
 (click:?page)[=
@@ -183,15 +180,46 @@ Overtime the effect of this bug makes your company uncompetive with others offer
 
 (click:?page)[=
  ... Your company slowly goes out of business.
-</tw-passagedata><tw-passagedata pid="28" name="Alter the code under Steve&#39;s name" tags="" position="2100,1600" size="100,100">(click:?page)[=
+</tw-passagedata><tw-passagedata pid="26" name="Alter the code under Steve&#39;s name" tags="" position="2100,1600" size="100,100">(click:?page)[=
 You periodically alter the code using steve&#39;s ID.
 (click:?page)[=
 Eventually malicious code is detected within the system.
 (click:?page)[=
-An innocent man loses his job, but the code base didn&#39;t go live.</tw-passagedata></tw-storydata>
-</tw-passagedata><tw-passagedata pid="23" name="Continue to work" tags="" position="1775,1550" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Ending" tags="" position="1250,2275" size="100,100">...6 months later...
-(if:$job &lt; 5)[You&#39;ve struggled to keep up with bills after losing you job. The brutal economy has made it impossible for you to find any work and it has strained the relationhip you&#39;ve had with your partner. Your kids notice the tension and it has begun to affect them.]
- </tw-passagedata><tw-passagedata pid="25" name="[Stay" tags="" position="400,1150" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="Startup" tags="startup" position="1525,125" size="100,100">(set: $read_timer to 3000, $job to 5, $company to 5)(set: $project to 5)(set: $public to 5)</tw-passagedata><tw-passagedata pid="27" name="Forced Ending Check" tags="footer" position="1675,125" size="100,100">(if: $job is 0 or $company is 0 or $project is 0 or $public is 0)[(go-to:&quot;Ending&quot;)))]</tw-passagedata></tw-storydata>
+An innocent man loses his job, but the code base didn&#39;t go live.</tw-passagedata><tw-passagedata pid="27" name="Ending footer" tags="footer" position="1700,100" size="100,100">{&lt;!-- This is checked on every single passage, so it we don&#39;t need to check if on every single passage --&gt;
+(if:($week&gt;0) and ($end is false) )[
+	(if:($job &lt; 1) or ($company &lt; 1) or ($project &lt; 1) or ($reputation &lt; 1) or( $sabotage &lt; 1))
+	[{
+    	(set: $end to true)
+        (go-to:&quot;Ending&quot;)
+     }]
+]
+}
+</tw-passagedata><tw-passagedata pid="28" name="Hub" tags="" position="1300,700" size="100,100">(if:visits is 1)[{These changes are going to be used to hurt people.
+
+But what could you do?}]
+
+[[Do your work-&gt;Stay with the Company]]
+[[Sabotage]]
+[[Protest the changes]]
+[[Quit]]</tw-passagedata><tw-passagedata pid="29" name="Ending" tags="" position="1300,1900" size="100,100">1 year later...
+
+(if:$job &lt;5)[The terrible economy means you haven&#39;t been able to find a job. Your finances and relationship with your wife have become strained. Your kids can feel this tension and have become more distant.]
+
+(if:$company&lt;5)[The ]</tw-passagedata><tw-passagedata pid="30" name="Week 1" tags="" position="725,500" size="100,100">Week 1, </tw-passagedata><tw-passagedata pid="31" name="Time Header" tags="header" position="1600,100" size="100,100">{(set: $day_of_week to (macro: [
+    (output-data: (a:
+        &quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;
+    )&#39;s ($day))
+]))
+(if:$week&gt;0)[Week (print: $week), (print: ($day_of_week:))]}
+</tw-passagedata><tw-passagedata pid="32" name="Variables" tags="startup" position="1500,100" size="100,100">{&lt;!-- Initialize all story variables here --&gt;
+&lt;!-- Job: How well you&#39;re perceived at work by management. 0 means you&#39;ll be fired --&gt;
+&lt;!-- Company: How well well your company is doing, financially. 0 means the company has failed. --&gt;
+&lt;!-- Project: How well the project is perceived by the weapons company. 0 means project has failed. --&gt;
+&lt;!-- Reputation: Company&#39;s reputation. 0 means the company is viewed poorly --&gt;
+&lt;!-- Sabotage: How stealthy you&#39;ve been with sabotage. 0 means the company knows you&#39;ve been intentionally sabotaging the project --&gt;
+(set: $job to 5, $company to 5,  $project to 5, $reputation to 5, $sabotage to 5)
+(set:$week to 0, $day to 5, $end to false)
+}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
