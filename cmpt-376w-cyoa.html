@@ -9,20 +9,31 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play cmpt-376w-cyoa.</tw-noscript></noscript></tw-story>
-<tw-storydata name="cmpt-376w-cyoa" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="A4762D99-4071-425A-80A3-932E0AF669C8" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Setting intro" tags="" position="675,200" size="100,100">You&#39;re a senior developer at the Big Brain Company.
+<tw-storydata name="cmpt-376w-cyoa" startnode="22" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="A4762D99-4071-425A-80A3-932E0AF669C8" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Setting intro" tags="" position="1300,250" size="100,100">You&#39;re a senior developer at the Big Brain Company.
 
 You love your job; the pay is good, your co-workers are your best friends, your manager is supportive, and the current project you&#39;re working on is super interesting.
 
-(click:?page)[=
-You&#39;ve been working on a new AI that can identify people based on certain information given to it. How they walk, how they talk, it can even tell if they had their hair cut. This system could be used to find missing people or catch shoplifters from CCTV
+(click: &quot;Tell me about the project&quot;)[ 
+   You&#39;ve been working on a new AI that can identify people based on certain information given to it. How they walk, how they talk, it can even tell if they had their hair cut. This system could be used to find missing people or catch shoplifters from CCTV
 
-Your team gives the AI an accuracy rating of 99.999% and now your company wants to offer it to potential clients.
-[[Background]]
+Your team gives the AI an accuracy rating of 99.999% and now your company wants to offer it to potential clients.]
+
+]
+
+
+(click:&quot;Tell me about the my live&quot;)[=
+Some context of who you are. You are a 30 year old senior developer, you have built a reputation for yourself in being a hardworking and reliable worker. As a senior developer you have been given access to most of the code base for the company. 
+
+On your non-professional side you are married and you have two children. Your spouse works part time, so you are the breadwinner of the family.]
+
+
+[[The New Client|Client intro]]
+[[Leave]]
 
 
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Client intro" tags="" position="675,500" size="100,100">One of the big names coming in is a weapons manufacturing company.
+</tw-passagedata><tw-passagedata pid="2" name="Client intro" tags="" position="1300,400" size="100,100">One of the big names coming in is a weapons manufacturing company(DarkVison Defense).
 
 Your team wasn&#39;t entirely keen on allowing them to use this technology, but your CEO assures everyone that the company is only using it for security purposes. Stuff like keeping predators off elementary school grounds and rich folks that want to keep paparazzi off their lawn. All non -lethal stuff to just shoo people away.
 
@@ -33,14 +44,16 @@ We gave the AI a list of profiles (pretty much our QA team) and walked around th
 
 The weapons guys were impressed. We felt like we had their business in the bag.
 
-[[Debrief with the CEO]]</tw-passagedata><tw-passagedata pid="3" name="Debrief with the CEO" tags="" position="675,625" size="100,100">After the weapons guys left, our CEO gathered the team for a job well done.
+[[Debrief with the CEO]]
+[[Leave]]</tw-passagedata><tw-passagedata pid="3" name="Debrief with the CEO" tags="" position="1300,575" size="100,100">After the weapons guys left, our CEO gathered the team for a job well done.
 
 He told us that they were very happy and&amp;mdash;with a few minor tweaks&amp;mdash;our AI would be in all of their autonomous systems. This was a billion dollar deal and he told us we&#39;d all get our piece. Bonuses. Really big ones.
 
 (click:?page)[=
 We were ecstatic. On Monday we&#39;d get a list of changes that they wanted and we&#39;d have until the end of the year to implement them. At that time, we would have done anything for the amount of money we were promised.
 
-[[Monday]]</tw-passagedata><tw-passagedata pid="4" name="Monday" tags="" position="675,750" size="100,100">Then came Monday. We had a meeting with the Principal Developer and he explained what sort of changes we were adding.
+[[Accept|Monday]]
+[[Reject]]</tw-passagedata><tw-passagedata pid="4" name="Monday" tags="" position="1300,775" size="100,100">Then came Monday. We had a meeting with the Principal Developer and he explained what sort of changes we were adding.
 
 (link:&quot;Feature 1&quot;)[The AI is too specific. They didn&#39;t want to tell who to hit, but anyone that could be perceived as dangerous.]
 
@@ -53,53 +66,191 @@ We were ecstatic. On Monday we&#39;d get a list of changes that they wanted and 
 (more:)[Your team was stunned. There were some glaring problems with their &quot;small&quot; changes. You think about the consequences that these features could bring. What could you do?
 
 [[Quit]]       [[Sabotage]]       [[Stay with the Company]]       [[Protest the changes]]]
-</tw-passagedata><tw-passagedata pid="5" name="Quit" tags="" position="525,900" size="100,100">You head back to your desk and begin writing your resignation letter. As you write it you think on how great your job, on the good pay, and how much hard work you&#39;ve put to get to where you are now, quitting now would undo years of hard work. 
+</tw-passagedata><tw-passagedata pid="5" name="Quit" tags="" position="1150,925" size="100,100">You head back to your desk and begin writing your resignation letter. As you write it you think on how great your job, on the good pay, and how much hard work you&#39;ve put to get to where you are now, quitting now would undo years of hard work. 
 
 You also have a family to think about, quitting would be a big blow to the household income.
 
 
 You now start to doubt yourself in your decision.
 [[Stay]]
-[[Continue with quitting]]</tw-passagedata><tw-passagedata pid="6" name="Sabotage" tags="" position="700,900" size="100,100">Your conscience prevents you from implementing the system without modifying it, but your need for job security prevents from quitting outright
+[[Continue with quitting]]</tw-passagedata><tw-passagedata pid="6" name="Sabotage" tags="" position="1750,1050" size="100,100">Your conscience prevents you from implementing the system without modifying it, but your need for job security prevents from quitting outright
 
-[[Make a statement with a software change]]
-[[Be subtle]]
-[[Quiet quit]]</tw-passagedata><tw-passagedata pid="7" name="Stay with the Company" tags="" position="175,1000" size="100,100">You say to yourself that you are only one person and you can&#39;t make a difference in the world. You keep your head down and keep working on the project. You hja</tw-passagedata><tw-passagedata pid="8" name="Protest the changes" tags="" position="1475,825" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="Stay" tags="" position="525,1025" size="100,100">You grab your incomplete resignation letter and toss it in the garbage can, you&#39;ve worked to hard to get to where you are now to ruin your entire career.
-[[Stay with the Company]] </tw-passagedata><tw-passagedata pid="10" name="Continue with quitting" tags="" position="650,1025" size="100,100">After some thought you remember that you became a software developer to help people not to harm them.
+[[Alter the software]]
+[[Be annoying]]
+[[Quiet quit]]</tw-passagedata><tw-passagedata pid="7" name="Stay with the Company" tags="" position="675,1050" size="100,100">You say to yourself that you are only one person and you can&#39;t make a difference in the world. You keep your head down and keep working on the project. 
+
+You tell yourself that you are not a hero. You are not a hero that can just sacrifice themselves for the greater good. You have a family, you have a spouse and two wonder kids need you. You just bought a house and you have morgage to pay, bills to pay and family to feed.
+
+You tell yourself that someone else will play the hero and try to stop the company from making this deal.
+
+
+(click:?page)[ 
+    You have been working on the project for 2 months, making sure the software works with the new hardware from the weapons manufacturer. The software is first developed to work on Drones. 
+    
+ Your productivity has gone down, which has caused a steady amount of delays within the project. You have had an ongoing meeting with your boss on performance and may be let go soon.
+]
+
+(click:?page)[
+	One month has passed and the Drone prototype is compelete. You are invited to go to the live demo. You hesitate to go, however you need to see what you have made.
+   At the demo location you notice that there are live pigs scattered on the demo site. You talk to your co-worker on what&#39;s going on. The co-worker says &quot;You did&#39;nt know they are live targets.&quot; When the testing begins you watch as 10 pigs get Slaughtered, you watch in horror as you realize the future targets will be people.
+]
+
+
+(click:?page)[=
+You talk to your co-worker on what you saw, and how you are scared of the technology we have made. You tell your co-worker that you want to quit but can&#39;t due to financial concerns. They tell you that you have to think for yourself and only you can decide.
+
+[[Continue to work]]
+[[Be the Hero|Whistle Blower]]</tw-passagedata><tw-passagedata pid="8" name="Protest the changes" tags="" position="2100,850" size="100,100">Worried about the dangers that these changes to the software could cause, you go toyour boss to protest. You tell him that these changes are dangerous and immoral, and would cause substantial harm to innocents.
+(click:?page)[=
+Your boss responds the client is paying a very large sum for the features and that you will gain a substantial bonus for completing it, however for you this is not about the money, but about the ethics of the project.
+(click:?page)[=
+In one last attempt to convince you, the boss states that such a project is not unethical for you since it&#39;s the client that is using the system to harm others and not you.
+You think for a moment on the boss&#39;s words and then make your reply.
+
+[[Stay with the Company]]
+[[Quit]]
+[[Refuse to Work on Features]]
+[[Threaten to go to Media]]</tw-passagedata><tw-passagedata pid="9" name="Stay" tags="" position="950,1075" size="100,100">You grab your incomplete resignation letter and toss it in the garbage can, you&#39;ve worked to hard to get to where you are now to ruin your entire career.
+[[Stay with the Company]] </tw-passagedata><tw-passagedata pid="10" name="Continue with quitting" tags="" position="1275,1050" size="100,100">After some thought you remember that you became a software developer to help people not to harm them.
 You heard from a colleague that 3 people have quit already from the news of the new client.
 You finish writing the resignation letter and head to your boss&#39;s office. You hand him the letter say goodbye and walk out the door uncertain of your future.
 [[Whistle Blower]]
 [[Try finding a New Job]]
-</tw-passagedata><tw-passagedata pid="11" name="Try finding a New Job" tags="" position="650,1150" size="100,100">You spend months sending your resume to hundreds of different companies hoping to get a new job, however there are few job openings. Your are forced to take a low paying job at the local super market. You are forced to carefully budget your finances to pay all of your bills.
+</tw-passagedata><tw-passagedata pid="11" name="Try finding a New Job" tags="" position="1325,1300" size="100,100">You spend months sending your resume to hundreds of different companies hoping to get a new job, however there are few job openings. Your are forced to take a low paying job at the local super market. You are forced to carefully budget your finances to pay all of your bills.
 You begin to regret your decision to quit, however you hear from one of your former coworkers that their efforts to make the AI faster and less specific went too far and when it was deployed it began targeting innocent civilians causing mass casualties. This message causes you to fell content with your decision to quit, knowing that you had no part in causing all the harm, altough a voice at the back of your mind wonders if you could have perhaps done something to stop the project.
-After many more agonizing months you find a new good paying software developer position, and your life returns to the good quality from before you quit.</tw-passagedata><tw-passagedata pid="12" name="Make a statement with a software change" tags="" position="850,1100" size="100,100">You decide to make an obvious change to the software that can without a doubt be traced back to you
+After many more agonizing months you find a new good paying software developer position, and your life returns to the good quality from before you quit.</tw-passagedata><tw-passagedata pid="12" name="Alter the software" tags="" position="1825,1375" size="100,100">You decide to make a change to the software. You quickly remember that there is a version control in effect at your company, and any change you make will be recorded under your name. What do you do next?
+
+[[Make a subtle change]]
+
+[[Delete Previous Versions |Go to Jail]]
+
+[[Alter the code under Steve&#39;s name]]</tw-passagedata><tw-passagedata pid="13" name="Be annoying" tags="" position="1975,1350" size="100,100">Knowing that your software company has ways of tracking who makes changes to the software, you decide not to risk anything major.
 
 (click:?page)[=
-Ending: By taking openly malicious actions against a company you are arrested and charged with (insert relevant Canadian law here) You end up with a short stint in jail before eventually being released on good behaviour. The software releases and you can not find a job in any computing industry due to you horrible reputation.</tw-passagedata><tw-passagedata pid="13" name="Be subtle" tags="" position="975,1100" size="100,100">Knowing that your software company has ways of tracking who makes changes to the software, you decide to change something more subtle, you decide to eat everyone’s lunches that they keep in the breakroom fridge that you know doesn’t have a camera. You stuff the toilets full of toilet paper
+Knowing that there is no camera in the breakroom, you decide to eat everyones lunches that they keep in the fridge.
 
 (click:?page)[=
-Ending: You never get caught, but the morally questionable software is released to catastrophic success. Your actions had no effect besides annoying your coworkers</tw-passagedata><tw-passagedata pid="14" name="Quiet quit" tags="" position="1100,1100" size="100,100">You recognize the immorality of the software, yet for whatever reason you can’t bring yourself to Quit. You decide to just lay low. You complete all your tasks assigned to you but you never bring your all. Only ever contributing the bare minimum of effort, until during the next economic downturn you’re are eventually let go.
+You stuff the toilets full of toilet paper to clog them. 
+
+(click:?page)[=
+You water the office plants with soda, slowly killing them.
+
+(click:?page)[=
+You never get caught ...
+(click:?page)[=
+but the morally questionable software is released to catastrophic success. Your actions had no effect besides annoying your coworkers.</tw-passagedata><tw-passagedata pid="14" name="Quiet quit" tags="" position="2150,1350" size="100,100">You recognize the immorality of the software, yet for whatever reason you can’t bring yourself to Quit. You decide to just lay low. You complete all your tasks assigned to you but you never bring your all. Only ever contributing the bare minimum of effort, until during the next economic downturn you’re are eventually let go.
 
 (click:?page)[=
 Ending: The Software releases a few weeks behind schedule, It makes headlines with how unbelievably lethal it is. You don’t have a job.
-</tw-passagedata><tw-passagedata pid="15" name="Whistle Blower" tags="" position="525,1150" size="100,100">You realize that quiting is not enough and the weight on your Conscious is too heavy. You know that you have been most likely have been replaced by now and the statement you made when quiting has been forgotten. So you want to utilze the knowledge you have of this deal to the public eye.
+</tw-passagedata><tw-passagedata pid="15" name="Whistle Blower" tags="" position="1025,1250" size="100,100">You realize that quiting is not enough and the weight on your Conscious is too heavy. You know that you have been most likely have been replaced by now and the statement you made when quiting has been forgotten. So you want to utilze the knowledge you have of this deal to the public eye.
 
 You know that bring your knowledge to the public eye is the best chance you have to stopping this development. However you remembered that you signed a NDA doing this will most likely end your career as a programmer or worse.
 
 [[Go to reporters]]
-[[Protect your future career]]</tw-passagedata><tw-passagedata pid="16" name="Go to reporters" tags="" position="425,1300" size="100,100">You decide to leak company information to the press, you know that this is a safe option which can hopefully protect yourself from getting into legal troubles with the company. And still have a career at the end of this choice. Your family is supported of this decision as they understand that doing nothing won&#39;t stop the company.
+[[Protect your future career]]</tw-passagedata><tw-passagedata pid="16" name="Go to reporters" tags="" position="1025,1500" size="100,100">You decide to leak company information to the press, you know that this is a safe option which can hopefully protect yourself from getting into legal troubles with the company. And still have a career at the end of this choice. Your family is supported of this decision as they understand that doing nothing won&#39;t stop the company.
 
 
 (more:)[
-The Press releases the information provided by the leak, the leaks get a bit of traction however the company is able to barry the the news as merely lies to bring down the company. You realise that giving information in the shadows wont work since there is no Accountability of what is being said. However this is a much more compromising position to be in and you rethink your starting to have doubts again on what to do.]
+The Press releases the information provided by the leak, the leaks get a bit of traction however the company is able to bury the the news as merely lies to bring down the company. You realise that giving information in the shadows wont work since there is no Accountability of what is being said. However this is a much more compromising position to be in and you rethink your starting to have doubts again on what to do.]
 
 [[Quit while you still have a chance]]
-[[pursue and disregard the consequences]]</tw-passagedata><tw-passagedata pid="17" name="Protect your future career" tags="" position="650,1275" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Background" tags="" position="625,350" size="200,100">Some context of who you are. You are a 30 year old senior developer, you have built a reputation for yourself in being a hardworking and reliable worker. As a senior developer you have been given access to most of the code base for the company. 
+[[pursue and disregard the consequences]]</tw-passagedata><tw-passagedata pid="17" name="Protect your future career" tags="" position="1400,1550" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Quit while you still have a chance" tags="" position="875,1750" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="pursue and disregard the consequences" tags="" position="1200,1725" size="200,100"></tw-passagedata><tw-passagedata pid="20" name="Refuse to Work on Features" tags="" position="2100,975" size="100,100">You tell your boss that as long as he refuses to change the features you will not be working on the project and you ask to be transferred to a different project. Your boss is not happy, he explains that this is the biggest project that your company has ever worked on, and if you don&#39;t want to work on it then you are not fit to work on for the company and will be immediately fired.
+[[Try finding a New Job]] 
+[[Stay safe |Stay with the Company]]</tw-passagedata><tw-passagedata pid="21" name="Threaten to go to Media" tags="" position="2225,975" size="100,100">You tell your boss that if he does not immediately drop the features then you will inform the media about the project and its danger, and that the company&#39;s reputation will be ruined.
+Your boss is clearly furious with what you said, he immediately fires you. As security comes in to escort you out of the building your boss warns you that if you leaking any information about the project is a violation of the NDA that you signed and that you will be taken to court and that you will be financially ruined and unemployed.
+[[Try finding a New Job]] 
+[[Go to reporters]] </tw-passagedata><tw-passagedata pid="22" name="Intro" tags="" position="1300,100" size="100,100">This is a &quot;Choose your own adventure game&quot; where the Player goes through a interactive story based on the case study, bases on  Automated Active Response Weaponry.
 
-On your non-professional side you are married and you have two children. Your spouse works part time, so you are the breadwinner of the family.
+Group Members: 
+
+Paramroop Parmar 301555228
+Jon Andre Briones 30124475
+Stefan Diaconu 301553230
+Kavin Godden 301320028
 
 
-[[Client intro]] </tw-passagedata><tw-passagedata pid="19" name="Quit while you still have a chance" tags="" position="275,1425" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="pursue and disregard the consequences" tags="" position="500,1425" size="200,100"></tw-passagedata></tw-storydata>
+[[Start the Game|Setting intro]]
+</tw-passagedata><tw-passagedata pid="23" name="Leave" tags="" position="1525,400" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Reject" tags="" position="1525,625" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Continue to work" tags="" position="650,1250" size="100,100">You decide to contuine to work.
+
+After a couple of months works, and continue improvements with the intergration. You are watching the news with your spouse and the next segment is on the company is on Dark Vision Defense. You thought that finially someone is about to speak up against the company. 
+
+(click:?page)[Dark Vision Defense has deployed new autonomous weapons to aid in the ongoing war. The news anchor warns, &quot;Viewer discretion is advised the following footage may be disturbing to some viewers.&quot;You watch as the drones cut down hordes of enemy soldiers in a single, calculated sweep. The machines show no mercy, ensuring allied forces gain safe passage through the battlefield. You slightly relieved that the technogoly is being used to help aid allied forces. The new anchor continues to speak on the ongoing war, and how civilian casualties has surged in the last 24hours.]
+
+(click:?page)[You are worried the drones are being used to harm Innocent civilians. and you have this gaping feeling to investigate
+
+[[Investigate]]
+[[Do nothing]]</tw-passagedata><tw-passagedata pid="26" name="Go to Jail" tags="" position="1900,1575" size="100,100">Ending: By taking openly malicious actions against a company you are found out, arrested and charged.
+(click:?page)[=
+You end up with a short stint in jail before eventually being released on good behaviour.
+(click:?page)[=
+The software releases and you can not find a job in any computing industry due to you horrible reputation.</tw-passagedata><tw-passagedata pid="27" name="Make a subtle change" tags="" position="1700,1575" size="100,100">(click:?page)[=
+You decide to decrease the functionality of the AI by adding a hard to catch bug at the core of most of it&#39;s features
+
+(click:?page)[=
+Overtime the effect of this bug makes your company uncompetive with others offering a similar product ...
+
+(click:?page)[=
+ ... Your company slowly goes out of business.
+</tw-passagedata><tw-passagedata pid="28" name="Alter the code under Steve&#39;s name" tags="" position="2100,1600" size="100,100">(click:?page)[=
+You periodically alter the code using steve&#39;s ID.
+(click:?page)[=
+Eventually malicious code is detected within the system.
+(click:?page)[=
+An innocent man loses his job, but the code base didn&#39;t go live.</tw-passagedata><tw-passagedata pid="29" name="Investigate" tags="" position="475,1450" size="200,100">You go to work the next day, you still have that gaping feeling in your chest that is telling you to Investigate as something feels wrong.
+
+You’ve been digging through the codebase for over seven relentless hours no breaks, no distractions, just pure determination. Line by line, you comb through endless source files, nested folders, and tangled API calls. The deeper you go, the more this feels like a  futile endeavour. You&#39;re starting to wonder if there&#39;s anything left to find at all.
+
+
+[[Keep looking]]
+[[Quit|Do nothing]] </tw-passagedata><tw-passagedata pid="30" name="Do nothing" tags="" position="750,1525" size="100,100">You continue to work, ignoring the fact that since the drones were sent out, civilian casualties have surged.
+
+(click:&quot;Months Later&quot;)[Dark Vision Defense is on the news for a ongoing investigatoin of Targeting civilians intentionally with the surge of civilian deaths. The investigation uncovered that Drones were using 7 times the bullets allied soliders were using. The problem with that is that in footage of the Drones in action they were precise and very effecient. So then where 
+that the software housed by Big Brain Company had been trained to kill anything but allied soliders in the war.]
+
+
+(click:&quot;Expanision of Dark Vision Defense&quot;)
+[Working with Dark vision Defense for so long you have made friends from Dark Vision Defense. You are invited to the bar to celebrate. You are not sure what it can be but you&#39;re excited to go.
+
+When you get to the bar, you share a few drinks and have a good time. You ask what we are celebrating. Your friend Jason says &quot; We got a large bonus from work.&quot; You ask whats with this generostiy from his company. Jason who had a few too many drinks says &quot;shhh you cant tell anyone, our company hit it big, we are now doing business with some select countries.&quot;]
+
+[[ Destruction of the Brain]]</tw-passagedata><tw-passagedata pid="31" name=" Destruction of the Brain" tags="" position="650,1675" size="200,100">The investiagtion against Dark Vision goes to court, a lawsuit of Half a billion dollars on the line. The charges Crimes against humanity. You thought this is the end of the company.
+
+(click:&quot;The Scape Goat&quot;)[ During the trial Dark Vision reveals that within the software of the Targeting system, the AI was trained to exclude targets and anything not included would have been a target. Soon after Big Brain Company becomes the target for the lawsuit. The Lawsuit reveals that the AI is trained specifically to target any identified human not wearing a specific uniform. You find out that Dark Vision was given access to train their own data.
+]
+
+(click: &quot;Bury&quot;)[The Big Brain company is public company and due to the law suit the company stock fell. The Big Brain also got buried with so much paper work and documention that the company lost the law suit and went bankrupt]
+
+(click:&quot;Price Paid&quot;)[= After you lost your job, your spouse divorced you. they said &quot;they can&#39;t stay with a person who helped harmed so many innocent lives&quot; You think back on the choices you could have made, wondering where it went wrong. You lost your spouse, your children, and your career. </tw-passagedata><tw-passagedata pid="32" name="Keep looking" tags="" position="475,1575" size="100,100">You keep going deeper and deeper back in time, until you find that the some of the core training data had been changed. 
+
+As you watch the training data you notice that the AI is being trained based on the clothing they are wearing. If the subject is wearing approved clothing they are not a target, however anyone that is not in the approved clothing is considered a target. And will be gunned down.
+
+You know you can&#39;t just sit and continue working with the company, but can you trust your boss?
+
+[[leave the Company|Continue with quitting]]
+[[Talk to the CEO]]</tw-passagedata><tw-passagedata pid="33" name="Talk to the CEO" tags="" position="350,1700" size="200,100">You go talk with the CEO, expressing your concerns with the training data.
+
+The CEO hears you out as you have a high Seniority and is trusted with the company. He tells you that Dark Vision wanted to add some training data to our model, so that it could be more specific to their companies needs.
+
+(click:&quot;Tell CEO of the concerns of the Data base&quot;)[=
+You show the CEO the new data samples.
+
+As the footage plays, his expression darkens. Concern turns to alarm.
+&quot;Who else has seen this?&quot; he asks.
+
+You shake your head. &quot;Just me&quot;
+
+The CEO leans back  &quot;This... this could lead to serious legal consequences. The targeting parameters are far too loose. This tech was designed to distinguish between faces, enemies, allies, and  civilians. Oversimplifying it like this? This is very concerning&quot;
+
+[[Blind Vision]]
+
+
+</tw-passagedata><tw-passagedata pid="34" name="Blind Vision" tags="" position="400,1825" size="100,100">The CEO after talking with investors files a law suit to the Dark Vision for Product Libility. Stating that the company is purposly changing the software to be a oversimplifed shell which will be unable to distinguish between civilians, allies, and enemies. 
+
+(click:&quot;The law suit&quot;)[Dark Vision has a very powerful legal team, they were able to settle the law suit, the two compaies partnership ended. However Darkvision were able to keep a simplier version of the software for continue development to the project. The Big Brain company returned to building software for the police and Investigators. You got a very generous bonus for the descovery of the project.]
+
+(click:&quot;Protest&quot;)[The Law suit had revealed what Dark Vision defense were trying to do with the company. Protest broke out all over the Countries since the new technology was a crime against humanity. After months of protest Dark Vision Defense dropped their project do to severe backlash from around world. Rumors say that Dark Vision Defense sold their development to the goverment.]
+
+(click:&quot;&quot;)[= You stay with the company, happy that the work you are doing is going to help keep the streets clean from crime.&quot;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
